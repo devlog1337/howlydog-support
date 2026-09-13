@@ -6,14 +6,44 @@
 <meta name="description" content="하울리도그(HowlyDog) 고객지원 페이지. 문의, 계정 삭제, 개인정보처리방침 안내.">
 <title>하울리도그 고객지원 | HowlyDog Support</title>
 <style>
-:root{--cream:#fff8e8;--paper:#fffdf7;--cookie:#d88932;--brown:#6f3a18;--deep:#3c2113;--green:#6f9b45;--line:#ead8b8}*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Segoe UI",sans-serif;color:var(--deep);background:linear-gradient(180deg,#dff4ff 0,#f4ffe9 28%,var(--cream) 60%);line-height:1.65}.wrap{max-width:760px;margin:0 auto;padding:46px 20px 70px}.hero{text-align:center;padding:26px 14px 18px}.icon{width:104px;height:104px;border-radius:24px;box-shadow:0 12px 30px #75401433;border:3px solid #fff6d8}h1{margin:18px 0 5px;font-size:34px;line-height:1.25;color:var(--brown)}.sub{margin:0 auto;max-width:560px;color:#705542}.badge{display:inline-block;margin-top:16px;padding:7px 14px;border-radius:999px;background:#fff1c8;border:1px solid #f1ca72;color:#7a4a18;font-weight:700;font-size:14px}.card{background:#fffdf9;border:1px solid var(--line);border-radius:22px;padding:23px;margin:16px 0;box-shadow:0 10px 26px #74421312}.card h2{font-size:21px;margin:0 0 9px;color:var(--brown)}.card p{margin:7px 0}.btn{display:inline-flex;align-items:center;justify-content:center;margin-top:10px;padding:12px 17px;border-radius:14px;text-decoration:none;background:var(--cookie);color:white;font-weight:800;box-shadow:0 6px 14px #98561e33}a{color:#86501d}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.info{font-size:15px}footer{text-align:center;color:#8a715e;font-size:13px;margin-top:30px}.paws{font-size:24px;letter-spacing:6px;color:#a8672c}@media(max-width:620px){.grid{grid-template-columns:1fr}h1{font-size:30px}.wrap{padding-top:24px}}
+:root{--cream:#fff8e8;--paper:#fffdf7;--cookie:#d88932;--brown:#6f3a18;--deep:#3c2113;--line:#ead8b8}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Segoe UI",sans-serif;color:var(--deep);background:linear-gradient(180deg,#dff4ff 0,#f4ffe9 28%,var(--cream) 60%);line-height:1.65}
+.wrap{max-width:760px;margin:0 auto;padding:46px 20px 70px}
+.hero{text-align:center;padding:26px 14px 18px}
+.icon-wrap{width:112px;height:112px;margin:0 auto 18px;border-radius:28px;background:#fff7dd;border:3px solid #ffe9a8;box-shadow:0 12px 30px #75401433;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.icon-svg{width:100%;height:100%;display:block}
+h1{margin:0 0 8px;font-size:34px;line-height:1.25;color:var(--brown)}
+.sub{margin:0 auto;max-width:560px;color:#705542}
+.badge{display:inline-block;margin-top:16px;padding:7px 14px;border-radius:999px;background:#fff1c8;border:1px solid #f1ca72;color:#7a4a18;font-weight:700;font-size:14px}
+.card{background:#fffdf9;border:1px solid var(--line);border-radius:22px;padding:23px;margin:16px 0;box-shadow:0 10px 26px #74421312}
+.card h2{font-size:21px;margin:0 0 9px;color:var(--brown)}
+.card p{margin:7px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;margin-top:10px;padding:12px 17px;border-radius:14px;text-decoration:none;background:var(--cookie);color:white;font-weight:800;box-shadow:0 6px 14px #98561e33}
+a{color:#86501d}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.info{font-size:15px}
+footer{text-align:center;color:#8a715e;font-size:13px;margin-top:30px}
+@media(max-width:620px){.grid{grid-template-columns:1fr}h1{font-size:30px}.wrap{padding-top:24px}.icon-wrap{width:104px;height:104px}}
 </style>
 </head>
 <body>
 <main class="wrap">
 <section class="hero">
-<img class="icon" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAcFBQYFBAcGBgYIBwcICxILCwoKCxYPEA0SGhYbGhkWGRgcICgiHB4mHhgZIzAkJiorLS4tGyIyNTEsNSgsLSz/2wBDAQcICAsJCxULCxUsHRkdLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCz/wAARCACAAIADASIAAhEBAxEB/8QAHAAAAQUBAQEAAAAAAAAAAAAABwIDBAUGAQAI/8QAOxAAAQMCBAQDBgQFAwUAAAAAAQIDEQAEBRIhMQZBUWETInEHMoGRodEUI0LBFbHh8PEkM1JDU2Jyov/EABsBAAIDAQEBAAAAAAAAAAAAAAECAAMEBQYH/8QAIREAAgICAgMBAQEAAAAAAAAAAAECEQMEITESE0EiYVH/2gAMAwEAAhEDEQA/ACF48OJbJIUoSKXnIVMmmVAEJEU5ICATOlfP6PVMX4i+WYma74iwJ1pABKwStYT/AMRz/eunzaiR60aFFh5R0zb8prqlEDePU1R49xAxgjGdXmdOwrFXPG+LuvHIgIA/SSB9INWwxSn0hlH6E4PKJ0VMdK8FuFJ1OvesFw9xyl+5DF42GXFaAxE/et0hedAImCPe60koOLqRGq6FSoJjOTFJW6sR7wFdBOYqCgExrVLjvFNphSMh87o0CRQUL6ArbLpKlFEwoz1VXR4gJUViOnShvccaYsZdS2hDR2BgafI1a4Dxsm8uRa3aQ26f7+NWSwTStoajaBbkzmJPUV4KWlUqmD0NNBSiBBpTiZCSony86qoQUrzDmQe9VuIrLbbkFXlHOp6REkEqHeq7Fj/pl9xUGXZNSolYBSYOxp1GYrPvJCTuQIVTXQRNOk7HmR1qIDHTJ21ESYph53w2lLIgJFLQhWhMq7ztSb5pCrRaUjdJ2NMBVYIsYxI3WL3Vw+5oyrw0A8jzMemlUD92pSjCxO/lp+/K0XV22rQh9YMGCPN/iq5XlBMSU6iD/Ou7hiowSQs3bHSrxEiCqQcwOxFFb2f48rFcHLDypftzlPORyoSBJUSYgHUcga1vsyuVNcWrtzJS+19RVO1jUoX/AIGL+BF4ixdOFYap5SoIHlmhbcXym3BdPqz3Dp23yTy9a1HH12pzE7SyUfICXFCeQ6/GKwN1cLeUoqkgbGKq1caryYzdKkLfvXXXFKUSeYTP1qOH1tqDzZKXW1BQV0pDis8akg8/tTbkNoURE7GtzXAiD3w/efj8AtbrfOgE9tKmBSQgnkaqeDWlMcEYeFGCpvN86s1lOUzJTzArgTVSofsUpZUkAggb9Kr8UBFuZPKKsMuoI32g8qrsTJNural+hRYBPNRgHlWbx7jJjDnjbW6C+8OQFW2L3CrXDH3EkghJ1oRPXhALqj+a951K6DkBWjXxex89EfCtmrR7QL5pQL1qS1/4wYrX4JxJY49bfkODxIhSDvQXNw6XM2eByBp20u38NvG72ycyOIiU7Zq2T1I1+RfJPsteNsNVh3Ez0phF1DqSRpOx+sfOs8ttSkHKdBz60U721tuPuE0PNkN3TYlKjulXMUML1F1h11+FxBjwnWzoVJkeo6+u1Wa+S14vtAaEhJACknUDUTWl9mTKrjjkOJHlabWpRGw5Vkl3BuF+G0FPLXACUjc9qL/s84Zc4bwdy7vRlvbyPLzQnpR2JqMHZEZ/2ht5OI2nCrKlTKoPxFYhSVqUolAM6Cf7/uKLfG/D7mN4Wl21E3VucyZ59R8aELzn4dZQ6Sy4kwpK069welLrTThRGhYbCd4gjLE/Ud69YWD2MYxa4YykqW6sAkchzP700lb1+8m3tGDcPq0SEJmT2FFXhDhZrgrCHcVxUpN+4mYP/THSepq3LkUI/wBAay6essFw9lpxxLbTCAga6mByrH3XH7QdUmytFvoT+oCRWcxrF3cZeN1dqKbafymts/c9qpLq7WtIyKypHIaAVkx63l+pD2o8dhGwnjq2v7j8PcILDqtp51dYkoKtlFOxGlBF19cBYUEutkFMHY0W8KuziHCdtcqGqkA1TnwetpoKaZY48wp/CH0CfMggfKKDLqisJJIGVASr+VHVxHiJWkxqIig/xZhC8GxpcoP4d9RWgxpPMGm05pNxA+UUa0+QKIJkj9UfClpCURrl5R3515KTmzIUCidSa4pQSIKTp/8AXb0rqCUbD2aX62MafsJlt5PiJB5Eb/tRLu8Mw/Emwi+s2X08syQaEfs7Qp7jVktlRQ2hSlfKili2Jt4ZbOPOLHlHWBXJ2VWTgfsZNtw5w2nx2bC2t3B+rLJ+FZ2+9obTjuW3bcdjmkTFZPFsUexR1VzdKUpo6oZBgqHU9qp3L5xQKEeUDcDSByFXQ1nJXNhbjH+hFsvaLbBxKLhpTIOhKhoBV/8Aw/hziZCXnrK3uDHvxCvnvQXN04oHxCSBuDqI6VPwTiF7A75C2nFFgnzJ6dwKM9VxV42DyTDXYYThWCicPw9lhR0zJT5vnWO9oOJKfeYw/OQlw5nIPIb/AG+Na7D7xu/sW7pteZK0zoZob8eFbHEaVmQFtEJn1FUYblP9AXDM1d3i3Xin3U7DT6VCUrPruQYpaySZ3A0J5ntSVDw9z5TsCIPp2rrJCMYuVIQ1mEzEbUXeHbdVrwJYIWIUpoK16Ez+9C7BsJe4k4gt7BkHKVBTquSUjf8AvvRsxFpDFmllsQhtISkdAKwbklxEeJNjSQknvUPF8Gs8dw5dtcthSV7HYg9am6FOulKGRCZSCP6VzYtp2gsDmNcC45grq1W7Sr62MwpsSUjuPtVIxhWM37wt2MMuFOHyyUKEdta+gkv5RyPqKiYhjbOG2ynXoTl6bmt0duVUxabM3wjwwnhDCXri8Wj8c8mVwZCE9JrL8SYz/GLtTKFRaNGFmYCjyTSsd4ku8ZUoJJt7U66HzLHb71lrt8KQGWjDY90cj3+NW4sLlL2TGcvFUIvXwp0krTl2Azaf4pgSdQR69aSI1mU7jSlohKRrtsOlbysQUKmAPMdt4Hc0kIObUr6GaczQhASdxrrvzrxUSoSZkRvUslGv4F4mOGPjDrpcsqP5ZJ27VsOKuHhxJhaXLRaU3TXmaUdjpqPjQgBzJyqBTFa7hrjN/CVoYvSXWNg5zHrWDNhlGXsgWJ2ZW6s8Qw19TF3YvNODT3dPgedS8J4YxzH3UotbJxtr/vOApSPj9qN9pfW2I2yXkZHEkSNjUkvFIAToOg2qt7jroWij4X4Ws+FbDw2lBy6cH5jsb9h2qVipzsq01ipiwokFRgVCxEZWSJMRWJycnbGRKmQBpIMa06lcACSFGTtTMlURA606kJmdaRBYm4fSzbqWrZIk0KuIMaOJYg4pZJt2lZUp5KV9hRD4gWW8IeUmRCSdKC63VLQnzHUSfU7n61v1MalJyfwDdI868484VOLMkchHyprNIObXkIpsOLJjKSmdydqcEEmPeHKuoViQBsPNFKGUCTEd9z/Sue7JIA70lWVUBO5Py70AiyAlSlkGDqR1NIJMlOUpUTpJ/l2pSlH3tdPpSVQUmYNQgnZIBOu80oLUfKNSNYTXFazoDO3c0lPlWdIOtEBpuDeJHMJxBthxRNs+YCVfpP7UX0LC2wpKgQRINfPDyyhAUnQg6HnR2wN78RgNo8oyVtgn5Vy9yCi1JfR1yiyKpIEg8zNQsS/2DA5VIbSEqJ69ajYjqyoDpWEZdk5JjSAaSmchCht0516PMkDea6TEkpiKACHiNuLmxdbkmUnSgddMLtbp21dSQ60oog9B/SjyTnkDSPpWT4p4JbxsG5tFpZvEjc7LHQ/etWtmWOVPphatAvIUf1CK9EGdAqOfOpd3w/j2HuFDuFvLj9SElQPxE1y04Z4gxJeVrDHgSdSUlI+tdX2Rq7EpkJaghOsQKaNy3ACFbnXrW7wv2RXbhSvFLxLCTuhHmP2rV2ns34YtW4ct13C4gqWs/tVMtrHElAcS6mcoUNdImZrskkQYG3X/ABRdvfZjw7dIPgpctlxEpVI+tZTFfZdilmC5h1wi8QBORXlV9qkdmEiUY7ToRXlAk8j2NP3WGYpZKUi6w24Sf/Qketds8ExnE1Bu1w94T+opIA+elX+cauyUQ/CXd3jNmwklxxQSAO9H6wtzY4Zb2qY/KQE+lZbg7gJGArF/fkPXsaDcIrYq82pgHlFcvayqbqIyOgSCJ27VBv8AW3KhsRpFTDAMEyetQ8RATbk842rIgonAkgcorxnLmkETUY3LZ0zgdda5+KbCYB0FKGh8lHLSdaShZA1B+dMl9paYzCN69+KRESk/tUohMFwQNgD9acF2qNoNVgfQBq4D3ry7kSACFH1ipyTxRPXcFStAP50iZkfImoqbhI1LkRyGtJNwhas2cx0qEomzEGRHevNukKiQR1qGbhCiAVeX1rofSnRJEUaZKLAXCDmkAxvIpKrgEQISOgFQVXSRGZSQCdOppKrhBjzj1qWweJNK5kmVa7TXlrCQOU9RtUNL6P8An6UoXDUQVzHTnUQaJAic0fOoWIKzIMaUpV0nLqofGoVzcpUhQBkmiiJH/9k=" alt="하울리도그 발바닥 쿠키 앱 아이콘">
-<div class="paws">● · ●</div>
+<div class="icon-wrap" role="img" aria-label="하울리도그 발바닥 쿠키 아이콘">
+<svg class="icon-svg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<rect width="120" height="120" rx="28" fill="#FFF2BE"/>
+<circle cx="60" cy="60" r="45" fill="#D88932"/>
+<circle cx="39" cy="38" r="10" fill="#FFF4C9"/>
+<circle cx="58" cy="31" r="10" fill="#FFF4C9"/>
+<circle cx="78" cy="38" r="10" fill="#FFF4C9"/>
+<circle cx="88" cy="55" r="9" fill="#FFF4C9"/>
+<path d="M60 51c-18 0-31 13-31 27 0 11 8 18 18 18 6 0 9-3 13-3s7 3 13 3c10 0 18-7 18-18 0-14-13-27-31-27Z" fill="#FFF4C9"/>
+<circle cx="35" cy="73" r="3" fill="#A95F24" opacity=".65"/>
+<circle cx="81" cy="77" r="3" fill="#A95F24" opacity=".65"/>
+<circle cx="58" cy="105" r="3" fill="#A95F24" opacity=".65"/>
+</svg>
+</div>
 <h1>하울리도그 고객지원</h1>
 <p class="sub">하울리도그 이용 중 문제가 발생했거나 도움이 필요하신가요?<br>아래 이메일로 문의해 주세요.</p>
 <span class="badge">HowlyDog Support</span>
